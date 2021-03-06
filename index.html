@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Notes App</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+   <div id="notes" class="container my-3"></div>
+
+   <div id="createNew"></div>
+   <div id="local-results" class="text-center mt-5 pt-4">
+      <h3 class="mb-4"></h3>
+      <div id="data-buttons"></div>
+   </div>
+
+
+   <!-- Proverka -->
+   <div id="password-block">
+      <div class="password-block__items">
+         <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               placeholder="Enter username">
+         </div>
+         <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+         </div>
+         <button type="button" class="btn btn-primary">Check</button>
+      </div>
+   </div>
+
+   <script src='https://kit.fontawesome.com/f3e4059bd1.js' crossorigin='anonymous'></script>
+   <script src="script/functions.js"></script>
+   <script src="script/Notes.js"></script>
+   <script src="script/script.js"></script>
+</body>
+
+</html>

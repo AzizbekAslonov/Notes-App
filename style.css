@@ -1,0 +1,75 @@
+body{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 10px 20px;
+}
+
+#password-block{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   opacity: 0;
+   visibility: hidden;
+}
+
+#password-block.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.password-block__items{
+   padding: 40px;
+   background: #fff;
+   width: 750px;
+}
+
+#notes{
+   position: relative;
+}
+.note-item{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.note-title{
+   display: inline-block;
+   padding: 10px;
+}
+
+.notes-iconblock{
+
+}
+
+.createNewNote button{
+   font-size: 25px;
+   font-weight: bold;
+}
+@media(max-width: 768px){
+   .notes-iconblock{
+      font-size: 16px;
+   }
+   .notes-iconblock i{
+      padding: 6px;
+      margin: 5px;
+   }
+   .note-title{
+      font-size: 15px;
+      max-width: 350px;
+      overflow: hidden;
+   }
+}
+@media(max-width: 576px){
+   .note-title{
+      max-width: 180px;
+      overflow: hidden;
+   }
+}
